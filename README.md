@@ -1,10 +1,10 @@
 # NuJava
 
-## Introdução
+### Introdução
 
 Nessa atividade usaremos o exemplo de uma aplicação bancária digital para treinar todos os conceitos que foram vistos até o momento como boas práticas de programação, orientação a objeto, polimorfismo, herança e encapsulamento.
 
-## Modelagem dos Dados
+### Modelagem dos Dados
 
 1. Uma pessoa é definida no sistema com as seguintes características: nome, gênero,  data de nascimento e CPF.
 2. A instituição bancária deve ser criada assim que a aplicação inicia e ela deve possuir os seguintes dados: nome, data de criação e o código da agência bancária.
@@ -17,6 +17,6 @@ Nessa atividade usaremos o exemplo de uma aplicação bancária digital para tre
     3. No saque de dinheiro o sistema deverá verificar o saldo atual e ver se aquele valor é menor ou igual ao saldo da conta.
     4. No depósito de dinheiro deve ser obrigatoriamente identificado para qual conta está sendo depositado e o valor do depósito. 
 
-## Funcionalidades
+### Funcionalidades
 
 Na NuJava é possível criar uma conta, exibir o seu saldo atual, depositar, sacar, solicitar cartão de crédito e realizar transferência entre contas.
