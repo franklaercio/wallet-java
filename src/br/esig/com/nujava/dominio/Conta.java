@@ -1,5 +1,8 @@
 package br.esig.com.nujava.dominio;
 
+import java.util.Date;
+import java.util.Random;
+
 /** Esta entendidade representa uma Conta.
  * 
  * Uma conta deve ser ligada apenas uma {@link Pessoa}. <p><br />
@@ -9,27 +12,27 @@ package br.esig.com.nujava.dominio;
  * @since 25/02/2021
  * @version 1.0
  */
-public class Conta extends Pessoa {
-	private Instituicao instituicao;
-	
+public class Conta extends Instituicao {
 	private String numero;
 	
 	private boolean ativa;
 	
 	private Double saldo;
 	
+	private Pessoa pessoa;
+	
+	private Date dataCriacao;
+	
+	private CartaoCredito cartaoCredito;
+	
+	private boolean possuiCredito;
+	
 	public Conta() {
-		this.instituicao = new Instituicao();
+		Random random = new Random();
+		this.numero = "" + random.nextInt(4) + "-" + random.nextInt(1);
+		this.pessoa = new Pessoa();
 		this.saldo = 0.0;
 		this.ativa = Boolean.TRUE;
-	}
-
-	public Instituicao getInstituicao() {
-		return instituicao;
-	}
-
-	public void setInstituicao(Instituicao instituicao) {
-		this.instituicao = instituicao;
 	}
 
 	public String getNumero() {
@@ -54,6 +57,38 @@ public class Conta extends Pessoa {
 
 	public void setSaldo(Double saldo) {
 		this.saldo = saldo;
+	}
+
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+
+	public Date getDataCriacao() {
+		return dataCriacao;
+	}
+
+	public void setDataCriacao(Date dataCriacao) {
+		this.dataCriacao = dataCriacao;
+	}
+
+	public CartaoCredito getCartaoCredito() {
+		return cartaoCredito;
+	}
+
+	public void setCartaoCredito(CartaoCredito cartaoCredito) {
+		this.cartaoCredito = cartaoCredito;
+	}
+
+	public boolean isPossuiCredito() {
+		return possuiCredito;
+	}
+
+	public void setPossuiCredito(boolean possuiCredito) {
+		this.possuiCredito = possuiCredito;
 	}
 	
 }
