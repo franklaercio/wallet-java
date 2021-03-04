@@ -21,6 +21,9 @@ Esse foi um treinamento realizado para Universidade do Estado de Mato Grosso dos
 
 Na NuJava é possível criar uma conta, exibir o seu saldo atual, depositar, sacar, solicitar cartão de crédito e realizar transferência entre contas.
 
+- Exemplo da aplicação sendo executada: <br />
+![Executando o NuJava](https://user-images.githubusercontent.com/38151364/109973650-72287900-7cd7-11eb-9316-40f1d01fa5eb.png)
+
 ### Requisitos
 
 Deve-se ter instalado a versão do Java [1.7](https://docs.oracle.com/javase/7/docs/api/) 
